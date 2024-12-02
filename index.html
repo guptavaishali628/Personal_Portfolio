@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc31bc413b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">  
+        <div class="container">              
+            <nav>
+                <img src="photos/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>AIML Student at LNCT university</p>
+                <h1>Hi, I'm <span> Vaishali</span><br> Gupta from India</h1>
+            </div>
+        </div>
+    </div>
+<!---------------------About section--------------------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="photos/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hi, i'm Vaishali Gupta, a second year computer science(AIML) Student at LNCT university.With a passion for technology and innovation,
+                        i am keen on exploring the latest trends in(Frontend Development,Machine learning and Artificial intelligence).<br>
+                        My academic journey has equipped me with a strong foundation in python, cpp and DSA.<br>I enjoy working on projects that challenges my problem-solving skills and allows me to apply theoritical knowledge to practical scenarios.
+                        <br>
+                        I'm constantly looking for opportunities to expand my knowledge and gain hands-on experience through internships, workshops, and collaborative projects.My goal is to contribute to impactful projects that makes a difference and continue learning in this ever-evolving field.
+                    </p>
+                    <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                      <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>  
+ <!-------------------------skills-------------------------------------->                   
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages:</span><br>Python | cpp</li>
+                            <li><span>Frontend Tachnologies:</span><br>HTML | CSS | Javascript</li>
+                            <li><span>Database:</span><br>SQL</li>
+                        </ul>
+                    </div>
+<!----------------------Certification---------------------------------->
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                           <li><span>From linkedin and Microsoft</span><br>completed certification in Generative AI</li>
+                           <li><span>From Infosys</span><br>completed certification in Basics of python</li>
+                        </ul>
+
+                    </div>
+<!--------------------Education--------------------------------->
+                    <div class="tab-contents" id="education">
+                         <ul>
+                           <li><span>2023-2027</span><br>persuing UG in cse AIML, from LNCT university(Bhopal)</li>
+                           <li><span>2021-2023</span><br>11 & 12th, from BKD aldrich public school (Orai,UP)</li>
+                           <li><span>2019-2021</span><br>9th & 10th, from Ram shree public school (Orai,up)</li>
+                         </ul>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------------services--------------------------------------> 
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontened Web Design</h2><br>
+                <p>As a frontend web designer, I specialize in crafting beautiful, responsive websites that not only look great but also provide a seamless user experience. 
+                   Below are the services I offer to help you create a strong online presence:
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Cleansing</h2><br>
+                <p>As a data analyst, I specialize in cleaning raw data to ensure it is accurate, consistent, and ready for analysis. Clean data is crucial for making reliable decisions, generating accurate insights, and avoiding costly errors. 
+                  Below are the key Data Cleaning services I offer:
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-powerpoint"></i>
+                <h2>Power-Point Design</h2><br>
+                <p>Creating compelling PowerPoint presentations that captivate your audience and effectively communicate your message is my expertise. Whether you’re preparing for a corporate meeting etc. I can help you design 
+                   presentations that stand out and engage your audience.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+<!----------------------portfolio-----------------------------------> 
+   <div id="portfolio">
+    <div clas="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photos/work1.jpeg" alt="work1">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/work2.jpeg" alt="work2">
+                <div class="layer">
+                    <h3>Music Player App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/work3.jpeg" alt="work3">
+                <div class="layer">
+                    <h3>Online Shoping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+   </div>  
+<!----------------------contact---------------------------------------->   
+   <div id="Contact">
+       <div class="container">
+             <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>veshaligupta@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> 9026578017</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://linkedin.com/in/vaishali-gupta-4374332a3"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="photos/cv.jpeg" download="CV" class="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+             </div>
+        </div>
+        <div class="copyright">
+            <p>Thank You <i class="fa-solid fa-heart"></i> for visiting My Portfolio</p>
+        </div>
+   </div>
+<!------------------------scripts---------------------------------------->    
+<script src="script.js"></script>
+</body>
+</html
